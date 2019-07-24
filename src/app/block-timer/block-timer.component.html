@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="block-timer__head flex">
+    <div class="time">
+      {{counter || '00:00.00'}}
+    </div>
+  </div>
+  <div class="block-timer__body">
+    <div class="pause flex" (click)="startTimer()">
+      {{' || Pause'}}
+    </div>
+    <div class="save flex">
+      <img src="https://image.flaticon.com/icons/svg/118/118795.svg">  
+    </div>
+    <div class="delete flex" (click)="clearTimer()">
+      <img src="https://image.flaticon.com/icons/svg/126/126468.svg">  
+    </div>
+    
+  </div>
+</div>
+
+
+<div style="background: red">{{startTime}}</div>
